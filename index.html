@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kiddie Corner Orders</title>
+  <meta name="description" content="Track Instagram orders, customers and sales for Kiddie Corner.">
+  <meta name="theme-color" content="#ec4878">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Kiddie Corner">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn" id="backBtn" aria-label="Back" hidden>&#8592;</button>
+    <h1 id="pageTitle">Kiddie Corner</h1>
+    <div id="topActions"></div>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="bottomnav" aria-label="Main">
+    <a href="#/dashboard" data-nav="dashboard"><span class="ni">&#128202;</span><span>Dashboard</span></a>
+    <a href="#/orders" data-nav="orders"><span class="ni">&#128230;</span><span>Orders</span></a>
+    <a href="#/order/new" data-nav="new" class="nav-new" aria-label="New order"><span class="plus">+</span></a>
+    <a href="#/customers" data-nav="customers"><span class="ni">&#128101;</span><span>Customers</span></a>
+    <a href="#/settings" data-nav="settings"><span class="ni">&#9881;&#65039;</span><span>Settings</span></a>
+  </nav>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="lightbox" hidden><img alt=""><button class="icon-btn lb-close" aria-label="Close">&#10005;</button></div>
+
+  <script src="vendor/xlsx.full.min.js" defer></script>
+  <script src="js/db.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
